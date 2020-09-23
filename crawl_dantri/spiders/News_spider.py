@@ -49,7 +49,7 @@ class News_spider(scrapy.Spider):
 
     def parse_category(self, response):
         list_news = response.xpath("//div[contains(@class, 'container')]/div[contains(@class, 'clearfix')]/div[contains(@class, 'col')]/ul[contains(@class, 'dt-list')]/li")
-        save_link_file = 'D://crawl_dantri//links_news.txt'
+        save_link_file = '/crawl_dantri/links_news.txt'
         logger.debug(f"Length of list news: {len(list_news)}")
         for new in list_news:
             # logger.debug(f"New element: {new}")

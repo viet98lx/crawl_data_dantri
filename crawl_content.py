@@ -4,7 +4,7 @@ from lxml import html
 import json
 
 list_obj = []
-with open('D:\crawl_dantri\links_news.txt', 'r') as f:
+with open('D:\crawl_dantri\crawl_dantri\links_news.txt', 'r') as f:
     list_url = f.readlines()
     for idx, url in enumerate(list_url, 0):
         # print(url)
